@@ -14,3 +14,7 @@ Thumbs.db
 .Trashes
 
 .extra
+
+# Idea related files
+/.idea
+*.iml
