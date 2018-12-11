@@ -173,6 +173,17 @@ function s() {
 	fi;
 }
 
+# `vs` with no argument opesn the current direct in VSCode, otherwise
+# opens the given location
+function vs() {
+  if [ $# -eq 0 ]; then
+    code .;
+  else
+    code "$@";
+  fi
+}
+
+
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
 function v() {
