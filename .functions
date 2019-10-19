@@ -211,13 +211,3 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
-
-# `vs` with no arguments opens the current directory in Visual Studio Code, otherwise
-# opens the given location
-function vs() {
-	if [ $# -eq 0 ]; then
-		code .;
-	else
-		code "$@"
-	fi;
-}
